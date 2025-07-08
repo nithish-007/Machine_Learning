@@ -2,10 +2,10 @@ import numpy as np
 from tqdm import tqdm
 
 class LinearRegression():
-    def __init__(self):
-        self.lr = 0.001
-        self.n_iter = 1000
-        self.patience = 10
+    def __init__(self, lr=0.001, n_iter=1000, patience=10):
+        self.lr = lr
+        self.n_iter = n_iter
+        self.patience = patience
 
         self.weights = None
         self.bias = None
